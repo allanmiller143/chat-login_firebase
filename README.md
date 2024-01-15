@@ -1,16 +1,15 @@
 # meu_chat_ong_user
 
-A new Flutter project.
+Descrição
+Este projeto Flutter foi desenvolvido para demonstrar a implementação de um sistema de autenticação com telas de login e um chat em tempo real utilizando o Firebase.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Funcionalidades
+1. Autenticação de Usuário
+Página de login com autenticação segura usando o Firebase Authentication.
+Os usuários podem criar uma conta ou fazer login com credenciais existentes.
+2. Chat em Tempo Real
+Sistema de chat que permite que os usuários enviem mensagens em tempo real.
+Utiliza o Firebase Realtime Database para armazenar e sincronizar as mensagens entre os usuários.
+3. Interface de Usuário Intuitiva
+Design responsivo e amigável para uma experiência de usuário agradável.
+Mensagens no chat são exibidas em bolhas, facilitando a leitura.
