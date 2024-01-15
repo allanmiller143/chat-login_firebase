@@ -47,14 +47,12 @@ class SignUpController extends GetxController {
         if(e.code == 'email-already-in-use'){
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Esse email já possui conta'),backgroundColor: Color.fromARGB(155, 250, 0, 0),));
         }
-        print('-------------------------------------------------------------------------------------------------------');
         print(e);
-
       }
-
     }
     else{
-      print('Dados nao completos');
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Insira todos os campos'),backgroundColor: Color.fromARGB(155, 250, 0, 0),));
+
     }
 
   }

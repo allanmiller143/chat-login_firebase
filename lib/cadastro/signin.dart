@@ -34,8 +34,8 @@ class SignInController extends GetxController {
         
         Get.toNamed('/chat');
       } on FirebaseException catch(e){
-        if(e.code == 'user-not-found'){
-            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Usuario não encontrado, tente novamente!'),backgroundColor: Color.fromARGB(155, 250, 0, 0),));
+        if(e.code == 'invalid-credential'){
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('E-mail ou senha incorreta'),backgroundColor: Color.fromARGB(155, 250, 0, 0),));
         }
         else if(e.code == 'wrong-password'){
             ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Senha incorreta'),backgroundColor: Color.fromARGB(155, 250, 0, 0),));
